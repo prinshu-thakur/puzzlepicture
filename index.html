@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Picture Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Picture Puzzle Game</h1>
+    <p id="instructions">
+      Upload an image to start the game. Use arrow keys (Up, Down, Left, Right) to slide the tiles and solve the puzzle!
+    </p>
+  </header>
+
+  <main>
+    <section id="input-section">
+      <h2>Upload Your Image</h2>
+      <input type="file" id="file-input" accept="image/*">
+      <button id="start-btn" class="btn">Start Puzzle</button>
+      <button id="theme-btn" class="btn">Switch Theme</button>
+    </section>
+
+    <section id="game-section">
+      <h2>Puzzle Game</h2>
+      <canvas id="puzzleCanvas" width="400" height="400">
+        Your browser does not support the HTML5 Canvas element.
+      </canvas>
+      <p id="message"></p>
+    </section>
+
+    <section id="image-section">
+      <h2>Original Image</h2>
+      <img id="originalImage" src="" alt="Uploaded Image Preview">
+    </section>
+  </main>
+</body>
+</html>
